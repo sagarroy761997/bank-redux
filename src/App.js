@@ -1,22 +1,27 @@
-import logo from './logo.svg';
+
+import { NavLink, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Balance from './Pages/Components/Balance';
+import Withdrawal from './Pages/Components/Withdrawal';
+import Deposit from './Pages/Components/Deposit';
 
 function App() {
   return (
     <div className="App">
+      <div className='uldiv'>
+      <ul>
+        <li><NavLink className='navlink' to='/'>Balance</NavLink></li>
+        <li><NavLink className='navlink' to='/deposit'>Deposit</NavLink></li>
+        <li><NavLink className='navlink' to='/withdrawal'>Withdrawal</NavLink></li>
+      </ul>
+      </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Redux</h1>
+        <Routes>
+          <Route path='/' element={<Balance/>}/>
+          <Route path='/deposit' element={<Deposit/>}/>
+          <Route path='/withdrawal' element={<Withdrawal/>}/>
+        </Routes>
       </header>
     </div>
   );
