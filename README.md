@@ -23,4 +23,5 @@ It is a simple application created to learn the concept of redux.
 ![Screenshot (25)](https://user-images.githubusercontent.com/113674345/214163881-7ce552d6-f18a-4457-a73d-a54bd176da40.png)
 ![Screenshot (26)](https://user-images.githubusercontent.com/113674345/214163890-3e552cce-056b-439c-aeb6-95d4c0fb3678.png)
 
-
+# Demo video link
+https://drive.google.com/file/d/1Nu52j8osijCxupH2C4ewnYesQnfMLqJj/view?usp=share_link
